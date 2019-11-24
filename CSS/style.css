@@ -1,60 +1,190 @@
-/* глобальные стили */
-body {
-    background: url(../img/background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+* { 
     padding: 0;
     margin: 0;
-    width: 100%;
+}
+html {
     height: 100%;
-    font-family: 'Segoe UI', sans-serif;
+}
+body {
+    background-color: rgb(10, 10, 9);
+    min-height: calc(100vh - 70px);
 }
 a {
     text-decoration: none;
+    color: #2196f3;
 }
-/* Стили хедера */
+/* selection block */
+::selection {
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 4, 255, 0.705);
+}
+/* Стили для header */
 .header {
-    width: 98%;
-    height: 60px;
-    background: white;
-    padding: 1%;
-}
-.header-logo {
+    background: rgb(5, 4, 2);
+    padding: 5px;
     display: flex;
-    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgb(255, 253, 248);
 }
-.logo_2 {
-    margin-left: 33%;
-    align-items: center;
+.header-heading {
+    font-family: 'Parisienne', cursive;
+    margin: auto;
 }
-.logo_soc {
-    margin-left: 36%;
+/* Стили для страницы */
+.container_window {
+    display: flex;
+    justify-content: center;
 }
-.logo_soc li{
-    list-style: none;
+.window {
+    width: 300px;
+    height: 450px;
+    background: rgb(247, 243, 243);
+    margin: 40px;
+    margin-top: 30px;
+    border-radius: 20px 20px 0px 0px ;
+    border-right: 1px solid silver;
+    box-shadow: 5px 3px 4px 2px rgba(255, 255, 255, 0.589);
 }
-.logo_soc img {
-    width: 20px;
-    height: 20px;
-}
-/* Стили навигации */
-.main {
+.window img {
     width: 100%;
-    height: 20px;
-
+    height: 190px;
+    border-radius: 20px 20px 0px 0px ;
 }
-.main-nav {
+.window h3 {
+    font-family: 'Arimo', sans-serif;
+    margin-top: 10px;  
     text-align: center;
-    font-size: 1.5em;
-    background: white;
-    padding: 10px;
 }
-.main-nav-a a {
-    text-decoration: none;
-    color: rgb(23, 76, 221);
-    margin-right: 15px;
-    padding: 2px;
+.window p {
+    font-family: 'EB Garamond', serif;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
-.main-nav-a a:hover {
-    font-weight: bold;
+.button {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 18px;
+    overflow: hidden;
+    align-items: center;
+    margin-left: 45px;
+    margin-top: 40px;
+    padding: 15px 30px;
+    transition: 0.2s;
 }
+.button__line {
+    position: absolute;
+    display: block;
+}
+.button__line--top {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+}
+.button:hover .button__line--top {
+    left: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.button__line--bottom {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+}
+.button:hover .button__line--bottom {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.button__line--left {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, #2196f3);
+}
+.button:hover .button__line--left {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.button__line--right {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2196f3);
+}
+.button:hover .button__line--right {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.button:hover {
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3;
+    background-color: #2196f3;
+    color: rgba(255, 255, 255, 0.589);
+    transition-delay: 1s;
+}
+.shell {
+    min-height: calc(100vh - 50px);
+}
+.footer {
+    color: #2196f3;
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid rgb(255, 253, 248);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+/* .card_1 {
+    display: none;
+} */
+.container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+.container ::selection {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.671);
+}
+.inform {
+    width: 500px;
+    background: white;
+    margin: auto;
+    padding: 50px;
+    position: relative;
+}
+.inform h1 {
+    font-family: 'Arimo', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.inform p {
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+}
+.close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
